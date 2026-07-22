@@ -28,7 +28,7 @@ export class AboutComponent {
     {
       icon: 'code',
       title: 'Frontend craftsmanship',
-      text: 'Comfortable across Angular, Vue.js, TypeScript, and modern responsive UI patterns.',
+      text: 'Comfortable across Angular, TypeScript, Bootstrap and modern responsive UI patterns.',
     },
     {
       icon: 'server',
