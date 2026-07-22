@@ -1,0 +1,82 @@
+<section id="contact" class="section">
+  <div class="container">
+    <div class="section-head" appReveal>
+      <p class="eyebrow">// contact</p>
+      <h2 class="section-title">Let's work together</h2>
+      <p class="section-subtitle">
+        Have an internship opening, a junior role, or a project in mind? I'd love to hear about it.
+      </p>
+    </div>
+
+    <div class="contact-grid">
+      <div class="contact-info" appReveal>
+        <a class="info-row neu-flat" [href]="'mailto:' + personal.email">
+          <span class="info-icon"><app-icon name="mail" [size]="18" /></span>
+          <span>{{ personal.email }}</span>
+        </a>
+        <div class="info-row neu-flat">
+          <span class="info-icon"><app-icon name="map-pin" [size]="18" /></span>
+          <span>{{ personal.location }}</span>
+        </div>
+
+        <div class="info-socials">
+          @for (social of socials; track social.name) {
+            <a
+              class="social-btn neu-flat"
+              [href]="social.url"
+              target="_blank"
+              rel="noopener noreferrer"
+              [attr.aria-label]="social.name"
+            >
+              <app-icon [name]="iconFor(social.name)" [size]="18" />
+            </a>
+          }
+        </div>
+      </div>
+
+      <form class="contact-form neu-raised" [formGroup]="form" (ngSubmit)="onSubmit()" appReveal [revealDelay]="120">
+        @if (submitted()) {
+          <div class="success-banner neu-flat" role="status">
+            <app-icon name="check-circle" [size]="18" />
+            <span>Thanks! Your message has been noted — I'll get back to you soon.</span>
+          </div>
+        }
+
+        <div class="field" [class.has-error]="isInvalid('name')">
+          <label for="name">Name</label>
+          <input id="name" type="text" formControlName="name" placeholder="Your full name" [attr.aria-invalid]="isInvalid('name')" />
+          @if (isInvalid('name')) {
+            <span class="error">Please enter your name.</span>
+          }
+        </div>
+
+        <div class="field" [class.has-error]="isInvalid('email')">
+          <label for="email">Email</label>
+          <input id="email" type="email" formControlName="email" placeholder="you@example.com" [attr.aria-invalid]="isInvalid('email')" />
+          @if (isInvalid('email')) {
+            <span class="error">Please enter a valid email address.</span>
+          }
+        </div>
+
+        <div class="field" [class.has-error]="isInvalid('message')">
+          <label for="message">Message</label>
+          <textarea
+            id="message"
+            rows="5"
+            formControlName="message"
+            placeholder="Tell me a bit about the role or project..."
+            [attr.aria-invalid]="isInvalid('message')"
+          ></textarea>
+          @if (isInvalid('message')) {
+            <span class="error">Message should be at least 10 characters.</span>
+          }
+        </div>
+
+        <button type="submit" class="btn btn-primary">
+          Send Message
+          <app-icon name="send" [size]="16" />
+        </button>
+      </form>
+    </div>
+  </div>
+</section>

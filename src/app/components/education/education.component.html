@@ -1,0 +1,28 @@
+<section id="education" class="section">
+  <div class="container">
+    <div class="section-head" appReveal>
+      <p class="eyebrow">// education</p>
+      <h2 class="section-title">Academic background</h2>
+    </div>
+
+    <div class="education-list">
+      @for (item of education; track item.id; let i = $index) {
+        <div class="education-card neu-raised" appReveal [revealDelay]="i * 90">
+          <span class="education-icon neu-flat">
+            <app-icon name="graduation-cap" [size]="22" />
+          </span>
+          <div class="education-info">
+            <h3>{{ item.program }}</h3>
+            <p class="institution">
+              {{ item.institution }}@if (item.location) {<span>, {{ item.location }}</span>}
+            </p>
+            <div class="education-meta">
+              <span class="tag">{{ item.startDate }} – {{ item.endDate }}</span>
+              <span class="status">{{ item.status }}</span>
+            </div>
+          </div>
+        </div>
+      }
+    </div>
+  </div>
+</section>

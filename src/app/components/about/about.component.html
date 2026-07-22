@@ -1,0 +1,35 @@
+<section id="about" class="section">
+  <div class="container about-grid">
+    <div class="about-copy" appReveal>
+      <p class="eyebrow">// about me</p>
+      <h2 class="section-title">Full-stack minded, detail-driven</h2>
+      <p class="about-text">
+        I'm {{ personal.name }}, a junior web developer and final-year Internet Technologies student with a genuine
+        interest in full-stack development. I enjoy working across the whole stack — from designing the interfaces
+        people interact with, to building the server-side logic and databases that power them. I care about writing
+        code that's readable, tested against real use cases, and easy for the next developer to pick up.
+      </p>
+      <p class="about-text">
+        Outside of coursework, I build personal and freelance-style projects to practice shipping complete
+        features end to end: authentication, CRUD flows, admin dashboards, and REST APIs consumed by modern
+        frontends.
+      </p>
+      <a class="btn btn-primary" [href]="personal.cvUrl" download>
+        Download CV
+        <app-icon name="download" [size]="16" />
+      </a>
+    </div>
+
+    <div class="about-highlights">
+      @for (item of highlights; track item.title; let i = $index) {
+        <div class="highlight-card neu-raised" appReveal [revealDelay]="i * 90">
+          <div class="highlight-icon neu-flat">
+            <app-icon [name]="item.icon" [size]="20" />
+          </div>
+          <h3>{{ item.title }}</h3>
+          <p>{{ item.text }}</p>
+        </div>
+      }
+    </div>
+  </div>
+</section>

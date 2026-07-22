@@ -1,0 +1,31 @@
+<footer class="footer">
+  <div class="container footer-grid">
+    <div class="footer-brand">
+      <span class="footer-name">{{ personal.name }}</span>
+      <p class="footer-desc">{{ personal.description }}</p>
+      <div class="footer-socials">
+        @for (social of socials; track social.name) {
+          <a
+            class="social-btn neu-flat"
+            [href]="social.url"
+            target="_blank"
+            rel="noopener noreferrer"
+            [attr.aria-label]="social.name"
+          >
+            <app-icon [name]="iconFor(social.name)" [size]="17" />
+          </a>
+        }
+      </div>
+    </div>
+
+    <nav class="footer-nav" aria-label="Footer">
+      @for (link of links; track link.id) {
+        <a href="#{{ link.id }}" (click)="$event.preventDefault(); navigate(link.id)">{{ link.label }}</a>
+      }
+    </nav>
+  </div>
+
+  <div class="container footer-bottom">
+    <p>&copy; {{ year }} {{ personal.name }}. All rights reserved.</p>
+  </div>
+</footer>

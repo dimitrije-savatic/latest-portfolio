@@ -1,0 +1,61 @@
+.about-grid {
+  display: grid;
+  grid-template-columns: 1.1fr 0.9fr;
+  gap: var(--space-8);
+  align-items: start;
+}
+
+.about-text {
+  color: var(--text-secondary);
+  margin-bottom: var(--space-4);
+  max-width: 56ch;
+}
+
+.about-copy .btn {
+  margin-top: var(--space-3);
+}
+
+.about-highlights {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-4);
+}
+
+.highlight-card {
+  padding: var(--space-5);
+  border-radius: var(--radius-lg);
+  transition: transform var(--transition-medium), box-shadow var(--transition-medium);
+}
+
+.highlight-card:hover {
+  transform: translateY(-4px);
+}
+
+.highlight-icon {
+  width: 44px;
+  height: 44px;
+  border-radius: var(--radius-md);
+  display: grid;
+  place-items: center;
+  color: var(--accent);
+  margin-bottom: var(--space-3);
+}
+
+.highlight-card h3 {
+  font-family: var(--font-display);
+  font-size: 1.02rem;
+  font-weight: 700;
+  margin-bottom: var(--space-2);
+  color: var(--text-primary);
+}
+
+.highlight-card p {
+  color: var(--text-secondary);
+  font-size: 0.92rem;
+}
+
+@media (max-width: 900px) {
+  .about-grid {
+    grid-template-columns: 1fr;
+  }
+}

@@ -1,0 +1,30 @@
+<section id="skills" class="section">
+  <div class="container">
+    <div class="section-head" appReveal>
+      <p class="eyebrow">// skills</p>
+      <h2 class="section-title">Technologies I work with</h2>
+      <p class="section-subtitle">
+        A practical toolkit built through coursework, internships, and personal projects — spanning the frontend,
+        backend, data, and tooling layers of a web application.
+      </p>
+    </div>
+
+    <div class="skills-grid">
+      @for (category of categories; track category.title; let i = $index) {
+        <div class="skill-card neu-raised" appReveal [revealDelay]="i * 70">
+          <div class="skill-card-head">
+            <span class="skill-icon neu-flat">
+              <app-icon [name]="category.icon" [size]="18" />
+            </span>
+            <h3>{{ category.title }}</h3>
+          </div>
+          <div class="skill-tags">
+            @for (item of category.items; track item) {
+              <span class="tag">{{ item }}</span>
+            }
+          </div>
+        </div>
+      }
+    </div>
+  </div>
+</section>

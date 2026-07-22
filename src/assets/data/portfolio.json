@@ -1,0 +1,165 @@
+{
+  "personal": {
+    "name": "Dimitrije Savatić",
+    "title": "Junior Web Developer",
+    "location": "Belgrade, Serbia",
+    "description": "Junior web developer passionate about building functional, user-friendly web applications and server-side solutions.",
+    "email": "dimitrije-savatic@gmail.com",
+    "cvUrl": "assets/cv/CV_Dimitrije_Savatic.pdf"
+  },
+  "socials": [
+    {
+      "name": "GitHub",
+      "url": "https://github.com/dimitrije-savatic",
+      "icon": "github"
+    },
+    {
+      "name": "LinkedIn",
+      "url": "https://www.linkedin.com/in/dimitrije-savatic",
+      "icon": "linkedin"
+    }
+  ],
+  "skills": {
+    "frontend": [
+      "HTML5",
+      "CSS3",
+      "JavaScript",
+      "TypeScript",
+      "Angular",
+      "Bootstrap",
+      "Tailwind CSS"
+    ],
+    "backend": [
+      "PHP",
+      "Laravel",
+      "C#",
+      "ASP.NET"
+    ],
+    "databases": [
+      "MySQL",
+      "PostgreSQL",
+      "SQLite",
+      "MariaDB"
+    ],
+    "tools": [
+      "Git",
+      "GitHub",
+      "Docker",
+      "Composer",
+      "Node.js",
+      "VS Code",
+      "PHPStorm",
+      "Visual Studio",
+      "Linux"
+    ],
+    "cloud": [
+      "Azure"
+    ],
+    "other": [
+      "REST APIs",
+      "AI Development Tools"
+    ]
+  },
+  "projects": [
+    {
+      "id": 1,
+      "name": "Ambrosia Shop",
+      "description": "An e-commerce web application for selling fruits and vegetables with product management, CRUD functionality, validation, AJAX interactions, shopping cart functionality, and an admin dashboard.",
+      "technologies": [
+        "PHP",
+        "Laravel",
+        "Bootstrap",
+        "MySQL",
+        "AJAX"
+      ],
+      "image": "assets/images/projects/ambrosia-shop.png",
+      "githubUrl": "",
+      "liveUrl": ""
+    },
+    {
+      "id": 2,
+      "name": "Smart Blog",
+      "description": "A full-stack blogging application where users can create and manage posts, interact through reactions, and participate in nested comment discussions.",
+      "technologies": [
+        "Laravel",
+        "PHP",
+        "Angular",
+        "TypeScript",
+        "MySQL",
+        "REST API"
+      ],
+      "image": "assets/images/projects/smart-blog.png",
+      "githubUrl": "",
+      "liveUrl": ""
+    },
+    {
+      "id": 3,
+      "name": "Personal Portfolio",
+      "description": "A responsive personal portfolio website showcasing projects, technical skills, education, and professional experience.",
+      "technologies": [
+        "Angular",
+        "TypeScript",
+        "HTML",
+        "CSS",
+        "Tailwind CSS"
+      ],
+      "image": "assets/images/projects/portfolio.png",
+      "githubUrl": "",
+      "liveUrl": ""
+    }
+  ],
+  "experience": [
+    {
+      "id": 1,
+      "position": "Software Development Intern",
+      "company": "Red Alert Labs",
+      "location": "",
+      "startDate": "November 2025",
+      "endDate": "December 2025",
+      "description": "Worked on an EU-funded software project and implemented a subsystem responsible for calculating evaluation results based on laboratory responses.",
+      "technologies": [
+        "PHP",
+        "Laravel",
+        "PostgreSQL",
+        "Software Development"
+      ]
+    }
+  ],
+  "education": [
+    {
+      "id": 1,
+      "institution": "ICT College of Vocational Studies",
+      "location": "Belgrade, Serbia",
+      "program": "Internet Technologies",
+      "startDate": "November 2020",
+      "endDate": "Present",
+      "status": "Final-year student"
+    }
+  ],
+  "services": [
+    {
+      "title": "Web Application Development",
+      "description": "Building modern and scalable web applications."
+    },
+    {
+      "title": "REST API Development",
+      "description": "Creating structured and reliable REST APIs for frontend applications."
+    },
+    {
+      "title": "Frontend Development",
+      "description": "Building responsive and interactive user interfaces."
+    },
+    {
+      "title": "Backend Development",
+      "description": "Developing server-side applications and business logic."
+    },
+    {
+      "title": "Database Design",
+      "description": "Designing relational databases and managing application data."
+    },
+    {
+      "title": "CRUD Applications",
+      "description": "Developing complete create, read, update, and delete functionality."
+    }
+  ]
+}

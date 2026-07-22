@@ -1,0 +1,23 @@
+@if (data(); as portfolio) {
+  <app-navbar [personal]="portfolio.personal" [socials]="portfolio.socials" />
+
+  <main id="main-content">
+    <app-hero [personal]="portfolio.personal" [socials]="portfolio.socials" />
+    <app-about [personal]="portfolio.personal" />
+    <app-skills [skills]="portfolio.skills" />
+    <app-projects [projects]="portfolio.projects" />
+    <app-experience [experience]="portfolio.experience" />
+    <app-education [education]="portfolio.education" />
+    <app-services [services]="portfolio.services" />
+    <app-contact [personal]="portfolio.personal" [socials]="portfolio.socials" />
+  </main>
+
+  <app-footer [personal]="portfolio.personal" [socials]="portfolio.socials" />
+} @else {
+  <div class="boot-screen" role="status" aria-live="polite">
+    <div class="boot-card neu-raised">
+      <span class="boot-dot"></span>
+      <span>Loading portfolio…</span>
+    </div>
+  </div>
+}

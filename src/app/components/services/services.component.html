@@ -1,0 +1,24 @@
+<section id="services" class="section">
+  <div class="container">
+    <div class="section-head" appReveal>
+      <p class="eyebrow">// what I can do</p>
+      <h2 class="section-title">How I can help</h2>
+      <p class="section-subtitle">
+        From a database schema to the interface someone actually clicks through — I can take a feature from idea to
+        working software.
+      </p>
+    </div>
+
+    <div class="services-grid">
+      @for (service of services; track service.title; let i = $index) {
+        <div class="service-card neu-raised" appReveal [revealDelay]="i * 70">
+          <span class="service-icon neu-flat">
+            <app-icon [name]="iconFor(i)" [size]="20" />
+          </span>
+          <h3>{{ service.title }}</h3>
+          <p>{{ service.description }}</p>
+        </div>
+      }
+    </div>
+  </div>
+</section>
