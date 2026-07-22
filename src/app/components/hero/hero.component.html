@@ -9,7 +9,7 @@
 
       <div class="hero-tech">
         @for (tech of coreTech; track tech) {
-          <span class="tag">{{ tech }}</span>
+        <span class="tag">{{ tech }}</span>
         }
       </div>
 
@@ -23,15 +23,10 @@
 
       <div class="hero-socials">
         @for (social of socials; track social.name) {
-          <a
-            class="social-btn neu-flat"
-            [href]="social.url"
-            target="_blank"
-            rel="noopener noreferrer"
-            [attr.aria-label]="social.name"
-          >
-            <app-icon [name]="iconFor(social.name)" [size]="18" />
-          </a>
+        <a class="social-btn neu-flat" [href]="social.url" target="_blank" rel="noopener noreferrer"
+          [attr.aria-label]="social.name">
+          <app-icon [name]="iconFor(social.name)" [size]="18" />
+        </a>
         }
       </div>
     </div>
