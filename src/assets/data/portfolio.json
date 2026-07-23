@@ -27,7 +27,8 @@
       "TypeScript",
       "Angular",
       "Bootstrap",
-      "Tailwind CSS"
+      "Tailwind CSS",
+      "Sass"
     ],
     "backend": [
       "PHP",
@@ -73,7 +74,7 @@
         "AJAX"
       ],
       "image": "assets/images/projects/ambrosia-shop.png",
-      "githubUrl": "",
+      "githubUrl": "https://github.com/dimitrije-savatic/ambrosia-shop",
       "liveUrl": ""
     },
     {
@@ -84,12 +85,12 @@
         "Laravel",
         "PHP",
         "Angular",
-        "TypeScript",
+        "Tailwind CSS",
         "MySQL",
         "REST API"
       ],
       "image": "assets/images/projects/smart-blog.png",
-      "githubUrl": "",
+      "githubUrl": "https://github.com/dimitrije-savatic/smart-blog",
       "liveUrl": ""
     },
     {
@@ -101,10 +102,10 @@
         "TypeScript",
         "HTML",
         "CSS",
-        "Tailwind CSS"
+        "Sass"
       ],
       "image": "assets/images/projects/portfolio.png",
-      "githubUrl": "",
+      "githubUrl": "https://github.com/dimitrije-savatic/latest-portfolio",
       "liveUrl": ""
     }
   ],
