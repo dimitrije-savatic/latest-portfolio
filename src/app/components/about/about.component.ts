@@ -22,8 +22,8 @@ export class AboutComponent {
   readonly highlights: Highlight[] = [
     {
       icon: 'graduation-cap',
-      title: 'Internet Technologies student',
-      text: 'Final-year student building a strong foundation in web systems and software engineering.',
+      title: 'Software engineering degree',
+      text: 'Graduated with a strong foundation in web systems and software engineering.',
     },
     {
       icon: 'code',

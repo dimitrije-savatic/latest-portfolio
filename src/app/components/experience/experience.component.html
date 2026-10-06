@@ -24,7 +24,9 @@
             </div>
             <span class="period tag">{{ item.startDate }} – {{ item.endDate }}</span>
           </div>
-          <p class="description">{{ item.description }}</p>
+          @for (desc of item.description; track desc) {
+          <p class="description">{{ desc }}</p>
+          }
           @if (item.technologies.length) {
           <div class="timeline-tags">
             @for (tech of item.technologies; track tech) {

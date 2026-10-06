@@ -17,7 +17,7 @@ export class HeroComponent {
 
   private scrollSpy = inject(ScrollSpyService);
 
-  readonly coreTech = ['PHP', 'Laravel', 'JavaScript', 'TypeScript', 'Angular'];
+  readonly coreTech = ['PHP', 'Laravel', 'Angular', 'JavaScript', 'TypeScript'];
 
   goTo(id: string): void {
     this.scrollSpy.scrollTo(id);
